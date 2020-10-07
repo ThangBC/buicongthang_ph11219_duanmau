@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvTenSachNhapSach"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tên sách" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvMaSachNhapSach"
+                    android:text="Mã"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvGiaSachNhapSach"
+                    android:text="Giá"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvSoLuongNhapSach"
+                    android:text="Số lượng"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvTacGiaNhapSach"
+                    android:text="Tác giả"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvNhaXuatBanNhapSach"
+                    android:text="NXB"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvNgayNhapNhapSach"
+                    android:text="Ngày nhập"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvTheLoaiNhapSach"
+                    android:text="Thể loại"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgEditSach"
+            android:layout_width="1dp"
+            android:layout_height="77dp"
+            android:layout_weight="1"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/imgDeleteSach"
+            android:layout_width="1dp"
+            android:layout_height="77dp"
+            android:layout_weight="1"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
