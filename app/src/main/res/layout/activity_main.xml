@@ -30,9 +30,10 @@
         app:layout_constraintVertical_bias="0.267">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:text="admin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tên tài khoản/Số điện thoại" />
+            android:hint="Tên tài khoản" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -48,6 +49,7 @@
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:text="admin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Mật khẩu" />
@@ -87,7 +89,7 @@
         android:id="@+id/ckbNhoMatKhau"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nhớ mật khẩu ?"
+        android:text="Remember me ?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.124"

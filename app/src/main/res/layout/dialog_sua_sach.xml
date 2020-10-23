@@ -6,7 +6,6 @@
     android:fitsSystemWindows="true">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_marginBottom="20dp"
         android:id="@+id/txtTenSachSuaSach"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -14,23 +13,22 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tên sách (50 ký tự max)" />
+            android:hint="Tên sách" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_marginBottom="20dp"
         android:id="@+id/txtGiaSachSuaSach"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Giá sách" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_marginBottom="20dp"
         android:id="@+id/txtTacGiaSuaSach"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -42,7 +40,6 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_marginBottom="20dp"
         android:id="@+id/txtNhaXuatBanSuaSach"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -54,13 +51,11 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Spinner
-        android:layout_marginBottom="20dp"
         android:id="@+id/spnTheLoaiSuaSach"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="60dp"/>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_marginBottom="20dp"
         android:id="@+id/txtSoLuongSuaSach"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -81,4 +76,27 @@
             android:layout_height="wrap_content"
             android:hint="Thời gian nhập" />
     </com.google.android.material.textfield.TextInputLayout>
+    <Spinner
+        android:id="@+id/spnIsSaleSuaSach"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancelSach"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy" />
+
+        <Button
+            android:id="@+id/btnSuaSach"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Sửa" />
+    </LinearLayout>
 </LinearLayout>

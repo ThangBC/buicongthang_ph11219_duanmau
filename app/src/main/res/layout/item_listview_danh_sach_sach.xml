@@ -74,7 +74,13 @@
                     android:text="Thể loại"
                     android:layout_width="150dp"
                     android:layout_height="wrap_content"/>
+
             </LinearLayout>
+            <TextView
+                android:id="@+id/tvIsSaleNhapSach"
+                android:text="Is sale"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
         <ImageView

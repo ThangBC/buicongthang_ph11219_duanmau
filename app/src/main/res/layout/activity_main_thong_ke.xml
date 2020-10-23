@@ -43,17 +43,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.225" />
 
-    <ImageView
-        android:id="@+id/imgTonKho"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/tonkho"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.551" />
 
     <TextView
         android:id="@+id/tv1"
@@ -82,18 +71,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.398" />
-
-    <TextView
-        android:id="@+id/tv3"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="Tồn kho"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.176"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.681" />
 </androidx.constraintlayout.widget.ConstraintLayout>

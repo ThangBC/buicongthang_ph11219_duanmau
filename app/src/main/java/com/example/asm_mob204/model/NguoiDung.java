@@ -1,6 +1,6 @@
 package com.example.asm_mob204.model;
 
-public class TaiKhoan {
+public class NguoiDung {
     private String tenTaiKhoan;
     private String hoVaTen;
     private String matKhau;
@@ -8,11 +8,12 @@ public class TaiKhoan {
     private String soDienThoai;
     private String ngaySinh;
     private String gioiTinh;
+    private String diaChi;
 
-    public TaiKhoan() {
+    public NguoiDung() {
     }
 
-    public TaiKhoan(String tenTaiKhoan, String hoVaTen, String matKhau, String emai, String soDienThoai, String ngaySinh, String gioiTinh) {
+    public NguoiDung(String tenTaiKhoan, String hoVaTen, String matKhau, String emai, String soDienThoai, String ngaySinh, String gioiTinh, String diaChi) {
         this.tenTaiKhoan = tenTaiKhoan;
         this.hoVaTen = hoVaTen;
         this.matKhau = matKhau;
@@ -20,6 +21,7 @@ public class TaiKhoan {
         this.soDienThoai = soDienThoai;
         this.ngaySinh = ngaySinh;
         this.gioiTinh = gioiTinh;
+        this.diaChi = diaChi;
     }
 
     public String getTenTaiKhoan() {
@@ -76,5 +78,13 @@ public class TaiKhoan {
 
     public void setGioiTinh(String gioiTinh) {
         this.gioiTinh = gioiTinh;
+    }
+
+    public String getDiaChi() {
+        return diaChi;
+    }
+
+    public void setDiaChi(String diaChi) {
+        this.diaChi = diaChi;
     }
 }

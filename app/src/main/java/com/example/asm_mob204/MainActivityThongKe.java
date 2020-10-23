@@ -15,7 +15,6 @@ public class MainActivityThongKe extends AppCompatActivity {
         setContentView(R.layout.activity_main_thong_ke);
         imgThongKeDoanhThu = findViewById(R.id.imgThongKeDoanhThu);
         imgSachBanChay = findViewById(R.id.imgSachBanChay);
-        imgTonKho = findViewById(R.id.imgTonKho);
         imgThongKeDoanhThu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -27,13 +26,6 @@ public class MainActivityThongKe extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivityThongKe.this,MainActivitySachBanChay.class);
-                startActivity(intent);
-            }
-        });
-        imgTonKho.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivityThongKe.this,MainActivitySachTonKho.class);
                 startActivity(intent);
             }
         });

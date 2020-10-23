@@ -3,17 +3,17 @@ package com.example.asm_mob204.model;
 public class Sach {
     private String maSach;
     private String tenSach;
-    private double giaSach;
+    private String giaSach;
     private String tacGia;
     private String nhaXuatBan;
     private String theLoai;
-    private int soLuong;
+    private String soLuong;
     private String thoiGianNhap;
-
+    private String isSale;
     public Sach() {
     }
 
-    public Sach(String maSach, String tenSach, double giaSach, String tacGia, String nhaXuatBan, String theLoai, int soLuong, String thoiGianNhap) {
+    public Sach(String maSach, String tenSach, String giaSach, String tacGia, String nhaXuatBan, String theLoai, String soLuong, String thoiGianNhap,String isSale) {
         this.maSach = maSach;
         this.tenSach = tenSach;
         this.giaSach = giaSach;
@@ -22,6 +22,7 @@ public class Sach {
         this.theLoai = theLoai;
         this.soLuong = soLuong;
         this.thoiGianNhap = thoiGianNhap;
+        this.isSale = isSale;
     }
 
     public String getMaSach() {
@@ -40,11 +41,11 @@ public class Sach {
         this.tenSach = tenSach;
     }
 
-    public double getGiaSach() {
+    public String getGiaSach() {
         return giaSach;
     }
 
-    public void setGiaSach(double giaSach) {
+    public void setGiaSach(String giaSach) {
         this.giaSach = giaSach;
     }
 
@@ -72,11 +73,11 @@ public class Sach {
         this.theLoai = theLoai;
     }
 
-    public int getSoLuong() {
+    public String getSoLuong() {
         return soLuong;
     }
 
-    public void setSoLuong(int soLuong) {
+    public void setSoLuong(String soLuong) {
         this.soLuong = soLuong;
     }
 
@@ -86,5 +87,13 @@ public class Sach {
 
     public void setThoiGianNhap(String thoiGianNhap) {
         this.thoiGianNhap = thoiGianNhap;
+    }
+
+    public String getIsSale() {
+        return isSale;
+    }
+
+    public void setIsSale(String isSale) {
+        this.isSale = isSale;
     }
 }

@@ -9,26 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivityDanhSachNguoiDung"
+        <activity android:name=".MainActivityDanhSachNguoiDung"
             android:windowSoftInputMode="adjustNothing"></activity>
         <activity
-            android:name=".MainActivityThemNguoiDung"
+            android:name=".MainActivityDanhSachKhachHang"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".MainActivityThemKhachHang"
             android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name=".MainActivityQuanLyNguoiDung"
-            android:windowSoftInputMode="adjustNothing" />
-        <activity
-            android:name=".MainActivityDoiMatKhau"
             android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name=".MainActivityThongTinTaiKhoan"
             android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name=".MainActivityCaiDat"
-            android:windowSoftInputMode="adjustNothing" />
-        <activity
-            android:name=".MainActivitySachTonKho"
             android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name=".MainActivitySachBanChay"

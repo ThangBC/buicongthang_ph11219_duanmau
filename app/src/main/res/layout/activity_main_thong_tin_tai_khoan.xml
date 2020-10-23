@@ -4,128 +4,87 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivityThongTinTaiKhoan"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivityThongTinTaiKhoan">
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:orientation="vertical"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.001">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/tvHoVaTenThongTinTaiKhoan"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:gravity="center_vertical"
-                android:text="Họ và tên"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:id="@+id/imgEditHoVaTenThongTinTaiKhoan"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/edit" />
-        </LinearLayout>
 
         <TextView
-            android:layout_marginBottom="10dp"
-            android:id="@+id/tvPassWordThongTinTaiKhoan"
-            android:layout_width="300dp"
+            android:id="@+id/tvTenTaiKhoanThongTinTaiKhoan"
+            android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Tên tài khoản"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvHoVaTenThongTinTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Họ và tên"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tvPassWordThongTinTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
             android:gravity="center_vertical"
             android:text="Mật khẩu"
             android:textSize="18sp" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
+
+        <TextView
+            android:id="@+id/tvEmailThongTinTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Email"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tvSoDienThoaiThongTinTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Số điện thoại"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tvNgaySinhThongTinTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Ngày sinh"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tvGioiTinhThongTinTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:text="Giới tính"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/btnSuaThongTinTaiKhoan"
+            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/tvEmailThongTinTaiKhoan"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:gravity="center_vertical"
-                android:text="Email"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:id="@+id/imgEditEmailThongTinTaiKhoan"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/edit" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/tvSoDienThoaiThongTinTaiKhoan"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:gravity="center_vertical"
-                android:text="Số điện thoại"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:id="@+id/imgEditSoDienThoaiThongTinTaiKhoan"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/edit" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_marginBottom="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/tvNgaySinhThongTinTaiKhoan"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:gravity="center_vertical"
-                android:text="Ngày sinh"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:id="@+id/imgEditNgaySinhThongTinTaiKhoan"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/edit" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/tvGioiTinhThongTinTaiKhoan"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:gravity="center_vertical"
-                android:text="Email"
-                android:textSize="18sp" />
-
-            <ImageView
-                android:id="@+id/imgEditGioiTinhThongTinTaiKhoan"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/edit" />
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:text="Sửa thông tin"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

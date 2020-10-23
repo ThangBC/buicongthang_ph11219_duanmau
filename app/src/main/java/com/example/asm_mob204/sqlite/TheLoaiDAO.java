@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 
+import com.example.asm_mob204.model.KhachHang;
 import com.example.asm_mob204.model.TheLoai;
 
 import java.util.ArrayList;
@@ -74,5 +75,25 @@ public class TheLoaiDAO {
         } else {
             return false;
         }
+    }
+    public List<TheLoai> timKiemTheLoai(String timNgayThem) {
+        List<TheLoai> theLoaiList = new ArrayList<>();
+        String sql = "SELECT * FROM theloai WHERE ngaythem LIKE '%" + timNgayThem + "%'";
+        Cursor cursor = mySQLite.getReadableDatabase().rawQuery(sql, null);
+        if (cursor.getCount() > 0) {
+            cursor.moveToFirst();
+            while (!cursor.isAfterLast()) {
+                String maTheLoai = cursor.getString(cursor.getColumnIndex("matheloai"));
+                String tenTheLoai = cursor.getString(cursor.getColumnIndex("tentheloai"));
+                String ngayThemTheLoai = cursor.getString(cursor.getColumnIndex("ngaythem"));
+                TheLoai theLoai = new TheLoai();
+                theLoai.setMaTheLoai(maTheLoai);
+                theLoai.setTenTheLoai(tenTheLoai);
+                theLoai.setNgayThem(ngayThemTheLoai);
+                theLoaiList.add(theLoai);
+                cursor.moveToNext();
+            }
+        }
+        return theLoaiList;
     }
 }

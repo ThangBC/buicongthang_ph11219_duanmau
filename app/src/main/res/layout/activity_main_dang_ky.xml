@@ -19,6 +19,7 @@
         app:layout_constraintVertical_bias="0.023">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:maxLength="50"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Tên tài khoản" />
@@ -33,7 +34,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134">
+        app:layout_constraintVertical_bias="0.113">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -50,7 +51,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.244"
+        app:layout_constraintVertical_bias="0.204"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -68,12 +69,13 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.352">
+        app:layout_constraintVertical_bias="0.295">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email" />
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -85,12 +87,14 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462">
+        app:layout_constraintVertical_bias="0.386">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Số điện thoại" />
+            android:hint="Số điện thoại"
+            android:inputType="number"
+            android:maxLength="10" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -102,7 +106,7 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573">
+        app:layout_constraintVertical_bias="0.477">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -110,7 +114,25 @@
             android:hint="Ngày sinh" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtDiaChiDangKy"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Địa chỉ" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <RadioGroup
+        android:id="@+id/rdogroupDangKy"
         android:layout_width="340dp"
         android:layout_height="130dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -121,19 +143,20 @@
         app:layout_constraintVertical_bias="0.785">
 
         <RadioButton
-            android:id="@+id/rdoNam"
+            android:checked="true"
+            android:id="@+id/rdoNamDangKy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nam" />
 
         <RadioButton
-            android:id="@+id/rdoNu"
+            android:id="@+id/rdoNuDangKy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nữ" />
 
         <RadioButton
-            android:id="@+id/rdoKhac"
+            android:id="@+id/rdoKhacDangKy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Khác" />

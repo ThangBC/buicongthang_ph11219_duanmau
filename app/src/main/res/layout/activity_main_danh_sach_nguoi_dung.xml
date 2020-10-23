@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".MainActivityDanhSachNguoiDung">
-
+    tools:context=".MainActivityDanhSachNguoiDung"
+    android:fitsSystemWindows="true">
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lọc số điện thoại người dùng"
+        android:text="Lọc tên người dùng"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,17 +45,16 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/txtLocSoDienThoaiNguoiDung"
+        android:id="@+id/txtLocTenNguoiDung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Nhập số điện thoại"
+        android:hint="Nhập tên người dùng"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.086" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

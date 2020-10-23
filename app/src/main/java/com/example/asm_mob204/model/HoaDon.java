@@ -6,13 +6,14 @@ public class HoaDon {
     private String tenNguoiMua;
     private String tenNguoiTao;
     private String tenSach;
-    private double gia;
-    private int soLuong;
+    private String gia;
+    private String soLuong;
+    private String tongTien;
 
     public HoaDon() {
     }
 
-    public HoaDon(String maHoaDon, String ngayTao, String tenNguoiMua, String tenNguoiTao, String tenSach, double gia, int soLuong) {
+    public HoaDon(String maHoaDon, String ngayTao, String tenNguoiMua, String tenNguoiTao, String tenSach, String gia, String soLuong, String tongTien) {
         this.maHoaDon = maHoaDon;
         this.ngayTao = ngayTao;
         this.tenNguoiMua = tenNguoiMua;
@@ -20,6 +21,7 @@ public class HoaDon {
         this.tenSach = tenSach;
         this.gia = gia;
         this.soLuong = soLuong;
+        this.tongTien = tongTien;
     }
 
     public String getMaHoaDon() {
@@ -62,19 +64,27 @@ public class HoaDon {
         this.tenSach = tenSach;
     }
 
-    public double getGia() {
+    public String getGia() {
         return gia;
     }
 
-    public void setGia(double gia) {
+    public void setGia(String gia) {
         this.gia = gia;
     }
 
-    public int getSoLuong() {
+    public String getSoLuong() {
         return soLuong;
     }
 
-    public void setSoLuong(int soLuong) {
+    public void setSoLuong(String soLuong) {
         this.soLuong = soLuong;
+    }
+
+    public String getTongTien() {
+        return tongTien;
+    }
+
+    public void setTongTien(String tongTien) {
+        this.tongTien = tongTien;
     }
 }

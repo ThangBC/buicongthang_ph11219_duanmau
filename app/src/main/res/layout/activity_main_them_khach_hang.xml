@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivityDoiMatKhau"
+    tools:context=".MainActivityThemKhachHang"
     android:fitsSystemWindows="true">
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtMatKhauCuDoiMatKhau"
+        android:id="@+id/txtMaKhachHangThemKhachHang"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,16 +15,16 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023">
+        app:layout_constraintVertical_bias="0.038">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nhập lại mật khẩu cũ" />
+            android:hint="Mã khách hàng" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtMatKhauMoiDoiMatKhau"
+        android:id="@+id/txtTenKhachHangThemKhachHang"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,16 +32,17 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137">
+        app:layout_constraintVertical_bias="0.165">
 
         <com.google.android.material.textfield.TextInputEditText
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nhập mật khẩu mới" />
+            android:hint="Tên khách hàng" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtNhapLaiMatKhauMoiDoiMatKhau"
+        android:id="@+id/txtSoDienThoaiThemKhachHang"
         android:layout_width="340dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -50,25 +50,27 @@
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.252">
+        app:layout_constraintVertical_bias="0.285">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:inputType="number"
+            android:maxLength="10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nhập lại mật khẩu mới" />
+            android:hint="Số điện thoại" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btnDoiMatKhau"
+        android:id="@+id/btnThemKhachHang"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:background="#A5CD39"
-        android:text="Xác nhận"
+        android:text="Thêm"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintVertical_bias="0.422" />
 </androidx.constraintlayout.widget.ConstraintLayout>
